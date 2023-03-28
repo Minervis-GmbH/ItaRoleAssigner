@@ -1,0 +1,11 @@
+<input name="{POST_VAR}" type="hidden" value="{EMPTY_PLACEHOLDER}"><select  data-multiselectinputgui="{CONFIG}" id="{ID}"  name="{POST_VAR}" style="display:none;width:300px;">
+	<option value="" selected disabled hidden>{CHOOSE_MSG}</option>
+	<!-- BEGIN option -->
+	<option value="{VAL}" {SELECTED}>{TEXT}</option>
+	<!-- END option -->
+</select>
+<script>
+    $("#{ID}").select2(JSON.parse(atob($("#{ID}").data("multiselectinputgui"))));
+	//$("#{ID}").attr('required', '');
+	document.getElementById('{ID}').required = true;
+</script>

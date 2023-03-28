@@ -1,0 +1,7 @@
+assignments#:#OE-Rollenzuordnung
+saving_invoked#:#Zuordnung erfolgreich gespeichert
+save#:#Speichern
+cron_description#:#Bei neuen OE-Mitgliedschaften wird regelmäßig geprüft, ob die Benutzer in einer bestimmten manuell definierten OE sind. Ist dies der Fall, wird ihnen eine manuell definierte globale Rolle zugewiesen. andernfalls wird diese globale Rolle entfernt, falls sie noch existiert.
+cron_title#:#Organisationseinheiten Rolle zuweisen
+role#:#Rolle
+orgunit#:#Organisationseinheit

@@ -1,0 +1,7 @@
+assignments#:#OU Role mapping
+saving_invoked#:#Mapping saved successfully
+save#:#Save
+cron_description#:#For new OU memberships, the system regularly checks whether the users are in a specific manually defined OU. If this is the case, they are assigned a manually defined global role. otherwise, this global role is removed if it still exists.
+cron_title#:#Assign roles to organisational units
+role#:#Role
+orgunit#:#Organisational unit
