@@ -148,8 +148,8 @@ class ilItaRoleAssignerCron extends ilCronJob
         $run_count = 0;
 
         foreach ($iterator as $ou_refid => $role){
-            $staff = $this->ou_tree->getEmployees($ou_refid);
-            //$staff = array_merge($staff, $this->ou_tree->getSuperiors($ou_refid));
+            $staff = $this->ou_tree->getEmployees($ou_refid, true);
+            $staff = array_merge($staff, $this->ou_tree->getSuperiors($ou_refid, true));
             //$role
             foreach($staff as $usr_id){
                 if ($this->dic->rbac()->admin()->assignUser($role, $usr_id)){
